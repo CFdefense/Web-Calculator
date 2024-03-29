@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang=""en>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html> <!-- Document Type and Version --> 
+<html lang=""en> <!-- Language -->
 
-    <div id="Calculator">
-        <input id="Display" readonly>
-        <div id="keys">
+<head> <!-- meta information -->
+    <meta charset="UTF-8"> <!-- Supports UTF8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- set initial view of screen -->
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css"> <!-- link css file to html -->
+</head>
+
+<body> <!-- Contents of Webpage -->
+
+    <div id="Calculator">  <!-- Group elements below under 'calculator' -->
+        <input id="Display" readonly> <!-- Create input 'Display' to be readonly-->
+        <div id="keys"> <!-- Group Elements below under keys-->
+            <!-- Initialize Buttons, and onclick, execute function, some have special class-->
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -33,6 +36,6 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js"></script> <!-- Source of JS File -->
 </body>
 </html>
